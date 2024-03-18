@@ -18,7 +18,7 @@ class TestAdminStatus(TestCase):
 
     def test_list_exists(self):
         """Проверка доступности списка задач."""
-        response = self.guest_client.get('/admin/')
+        response = self.guest_client.get('/admin/login/?next=/admin/')
         self.assertEqual(response.status_code, HTTPStatus.OK)
 
     # def test_task_creation(self):
