@@ -107,19 +107,19 @@ jobs:
         password: ${{ secrets.USER_PASSWORD }}
         port: 22
         source: "docker-compose.production.yml"
-        target: "TrialApp"
-    # - name: Executing remote ssh commands to deploy
-    #   uses: appleboy/ssh-action@master
-    #   with:
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USER }}
-    #     key: ${{ secrets.SSH_KEY }}
-    #     passphrase: ${{ secrets.SSH_PASSPHRASE }}
-    #     script: |
-    #       cd trialapp
-    #       sudo docker compose -f docker-compose.production.yml pull
-    #       sudo docker compose -f docker-compose.production.yml down
-    #       sudo docker compose -f docker-compose.production.yml up -d
-    #       sudo docker compose -f docker-compose.production.yml exec trialapp python manage.py migrate
-    #       sudo docker compose -f docker-compose.production.yml exec trialapp python manage.py collectstatic
-    #       sudo docker compose -f docker-compose.production.yml exec trialapp cp -r /app/collected_static/. /trialapp_static/static/
+        target: "trialapp"
+    - name: Executing remote ssh commands to deploy
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.USER_PASSWORD }}
+        port: 22
+        script: |
+          cd trialapp
+          sudo docker compose -f docker-compose.production.yml pull
+          sudo docker compose -f docker-compose.production.yml down
+          sudo docker compose -f docker-compose.production.yml up -d
+          sudo docker compose -f docker-compose.production.yml exec trialapp python manage.py migrate
+          sudo docker compose -f docker-compose.production.yml exec trialapp python manage.py collectstatic
+          sudo docker compose -f docker-compose.production.yml exec trialapp cp -r /app/collected_static/. /trialapp_static/static/
