@@ -1,11 +1,12 @@
 import os
 from pathlib import Path
 
-from . import secrets
+# from . import secrets
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = secrets.SECRET_KEY
+# SECRET_KEY = secrets.SECRET_KEY
+SECRET_KEY = os.getenv('SECRET_KEY', 'django')
 
 DEBUG = False
 
