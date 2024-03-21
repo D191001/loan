@@ -5,7 +5,6 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECRET_KEY = secrets.SECRET_KEY
 SECRET_KEY = os.getenv('SECRET_KEY', 'django')
 
 DEBUG = False
@@ -28,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'banks.apps.BanksConfig'
 ]
 
 MIDDLEWARE = [
