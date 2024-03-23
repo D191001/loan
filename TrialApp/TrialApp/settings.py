@@ -104,9 +104,9 @@ USE_TZ = True
 
 # STATIC_URL = 'static/'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 # STATIC_ROOT = BASE_DIR / 'collected_static'
-STATIC_ROOT = '/static/'
+STATIC_ROOT = '/staticfiles/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
