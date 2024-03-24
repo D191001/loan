@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'django')
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'trialapp.ru',
@@ -105,9 +105,9 @@ USE_TZ = True
 # STATIC_URL = 'static/'
 
 STATIC_URL = '/static/'
+# Указываем корневую директорию для сборки статических файлов;
+# в контейнере это будет /app/collected_static
 STATIC_ROOT = BASE_DIR / 'collected_static'
-
-# STATIC_ROOT = '/staticfiles/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
