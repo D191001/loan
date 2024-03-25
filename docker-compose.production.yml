@@ -18,6 +18,6 @@ services:
     image: trumphack/trialappgateway
     env_file: .env
     volumes:
-      - static_volume:/staticfiles/
+      - static_volume:/staticfiles
     ports:
       - 8000:80
