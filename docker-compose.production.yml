@@ -14,12 +14,12 @@ services:
     env_file: .env
     volumes:
       - static_volume:/trialapp_static
-      - media:/media
+      # - media:/media
   gateway:
     image: trumphack/trialappgateway
     env_file: .env
     volumes:
       - static_volume:/staticfiles
-      - media:/media
+      # - media:/media
     ports:
       - 8000:80
