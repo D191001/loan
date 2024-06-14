@@ -1,16 +1,7 @@
-# # from django.shortcuts import render
-
-# # # Create your views here.
-# from django.http import HttpResponse # type: ignore
-
-
-# def index(request):
-#     return HttpResponse('<h1>Здесь же была ракета!</h1>')
-
-from django.http import HttpResponse
-from django.conf import settings
-# from django.shortcuts import render
 import os
+
+from django.conf import settings
+from django.http import HttpResponse
 
 
 def index(request):
