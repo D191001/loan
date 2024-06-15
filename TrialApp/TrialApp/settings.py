@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'banks.apps.BanksConfig'
+    'banks.apps.BanksConfig',
     'django.contrib.http'
 ]
 
