@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'django')
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'trialapp.ru',
@@ -67,6 +67,7 @@ WSGI_APPLICATION = 'TrialApp.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
