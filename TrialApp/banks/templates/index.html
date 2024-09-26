@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-{% load static %}
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+    {% load static %}
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();
     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -14,67 +14,106 @@
          trackLinks:true,
          accurateTrackBounce:true
     });
- </script>
- <noscript><div><img src="https://mc.yandex.ru/watch/98437092" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
- <!-- /Yandex.Metrika counter -->
-<head>
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
-    <link rel="mask-icon" href="{% static 'img/safari-pinned-tab.svg' %}" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Микрозаймы</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="header">
-        <h1>Лучшие предложения по займам онлайн</h1>
-        <h1>Для получения необходимо фото паспорта и фото банковской карты, доступ в госуслуги</h1>
-        <h1>От начала оформления до получения денег у Вас уйдет не больше 15 минут</h1>
-        <h1>Завтра будет дороже, не откладывай, оформи сейчас!</h1>
-    </header>
-    <main class="main-content">
-        <div class="offer-block">
-            <h1>еКапуста, дают всем, есть беспроцентный период для тех кто перый раз</h1>
-            <h2>Займ до 30 000 ₽</h2>
-            <h2>до 21 дня</h2>
-            <button class="apply-button" onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8K3P6T'">Подать заявку</button>
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/98437092"
+                 style="position:absolute;
+                        left:-9999px"
+                 alt="" />
         </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <head>
+        <link rel="apple-touch-icon"
+              sizes="180x180"
+              href="{% static 'img/apple-touch-icon.png' %}">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="{% static 'img/favicon-32x32.png' %}">
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="{% static 'img/favicon-16x16.png' %}">
+        <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
+        <link rel="mask-icon"
+              href="{% static 'img/safari-pinned-tab.svg' %}"
+              color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Микрозаймы</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Лучшие предложения по займам онлайн</h1>
+            <h1>Для получения необходимо фото паспорта и фото банковской карты, доступ в госуслуги</h1>
+            <h1>От начала оформления до получения денег у Вас уйдет не больше 15 минут</h1>
+            <h1>Завтра будет дороже, не откладывай, оформи сейчас!</h1>
+        </header>
         <main class="main-content">
             <div class="offer-block">
-                <h1>Вебзайм, деньги на карту онлайн</h1>
+                <h1>еКапуста, дают всем, есть беспроцентный период для тех кто перый раз</h1>
                 <h2>Займ до 30 000 ₽</h2>
-                <h2>Срок от 7 дней ₽</h2>
-                <h2>Срок без % 14 дней</h2>
-                <button class="apply-button" onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8K2eUj'">Подать заявку</button>
+                <h2>до 21 дня</h2>
+                <button class="apply-button"
+                        onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8K3P6T'">
+                    Подать заявку
+                </button>
             </div>
-        </main>
-        <main class="main-content">
-            <div class="offer-block">
-                <h1>Creditter, после одобрения необходимо отключить допуслуги, просто написав об этом в поддержку.</h1>
-                <h2>Займ 7500 ₽</h2>
-                <h2>15 дней</h2>
-                <h2>к возврату 8400 ₽</h2>
-                <button class="apply-button" onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8Jv3KH'">Подать заявку</button>
-            </div>
-        </main>
-        <main class="main-content">
-            <div class="offer-block">
-                <h1>ПАО МФК «Займер». С любой кредитной историей .</h1>
-                <h2>Займ до 30 000 ₽</h2>
-                <h2>Срок от 7 дней ₽</h2>
-                <h2>Срок без % 30 дней</h2>
-                <button class="apply-button" onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8KPAE2'">Подать заявку</button>
-                <p style="font-size: 12px;">Реклама. ООО "МБ Маркетплейс". ИНН 7727618949</p>
-            </div>
-        </main>
-        
-        <style>
+            <main class="main-content">
+                <div class="offer-block">
+                    <h1>Вебзайм, деньги на карту онлайн</h1>
+                    <h2>Займ до 30 000 ₽</h2>
+                    <h2>Срок от 7 дней ₽</h2>
+                    <h2>Срок без % 14 дней</h2>
+                    <button class="apply-button"
+                            onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8K2eUj'">
+                        Подать заявку
+                    </button>
+                </div>
+            </main>
+            <main class="main-content">
+                <div class="offer-block">
+                    <h1>Creditter, после одобрения необходимо отключить допуслуги, просто написав об этом в поддержку.</h1>
+                    <h2>Займ 7500 ₽</h2>
+                    <h2>15 дней</h2>
+                    <h2>к возврату 8400 ₽</h2>
+                    <button class="apply-button"
+                            onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8Jv3KH'">
+                        Подать заявку
+                    </button>
+                </div>
+            </main>
+            <main class="main-content">
+                <div class="offer-block">
+                    <h1>ООО МКК «УМНЫЕ НАЛИЧНЫЕ»</h1>
+                    <h2>Займ до 30 000 ₽</h2>
+                    <h2>Срок от 7 дней ₽</h2>
+                    <h2>Срок без % 7 дней</h2>
+                    <button class="apply-button"
+                            onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8KVDMG'">
+                        Подать заявку
+                    </button>
+                </div>
+            </main>
+            <main class="main-content">
+                <div class="offer-block">
+                    <h1>ПАО МФК «Займер». С любой кредитной историей .</h1>
+                    <h2>Займ до 30 000 ₽</h2>
+                    <h2>Срок от 7 дней ₽</h2>
+                    <h2>Срок без % 30 дней</h2>
+                    <button class="apply-button"
+                            onclick="window.location.href='https://agents.finuslugi.ru/go?erid=LjN8KPAE2'">
+                        Подать заявку
+                    </button>
+                    <p style="font-size: 12px;">Реклама. ООО "МБ Маркетплейс". ИНН 7727618949</p>
+                </div>
+            </main>
+            <style>
         .apply-button {
             background-color: #FF5733; /* Яркий цвет фона */
             color: white; /* Цвет текста */
@@ -90,7 +129,7 @@
             background-color: #C70039; /* Темнее при наведении */
             transform: scale(1.05); /* Увеличение кнопки при наведении */
         }
-        </style>
-    </main>
-</body>
+            </style>
+        </main>
+    </body>
 </html>
