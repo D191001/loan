@@ -4,4 +4,4 @@
 Стек технологий:
 django, githubActions, vps(debian), postgres, nginx, finuslugi.
 
-retest)
+retest2)
